@@ -1,1 +1,14 @@
-{}
+{
+  "user": {
+    "id" : "jBWMVGjm5016LGwepDoty",
+    "username" : "frontendmaster"
+  },
+  "pet": [
+    { "id": "aedad",
+  "type": "DOG",
+  "name": "german",
+  "createdAt": 123456},
+  { "id": "adiandaedad", "type": "DOG", "name": "german", "createdAt": 123456 },
+  { "id": "adnwawiodaedad", "type": "DOG", "name": "german", "createdAt": 123456 }
+  ]
+}
