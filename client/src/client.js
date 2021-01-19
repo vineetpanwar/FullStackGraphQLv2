@@ -22,13 +22,36 @@ const query = gql`
 `;
 
 client.query({query}).then(curr => console.log(curr))
-
 */
+//example of mixing schemas from UI 
+const typeDefs = gql`
+  extend type User {
+    age: Int
+  }
+
+  extend type Pet {
+    vaccinated: Boolean
+  }
+`
+
+const resolvers = {
+  User: {
+    age() {
+      return 25
+    }
+  },
+  Pet: {
+    vaccinated() {
+      return true
+    }
+  }
+}
+
 //helper middlewares from apollo to incur a delay in response
 const delay = setContext( req => new Promise((success, fail) => {
   setTimeout(() => {
     success()
-  }, 8000)
+  }, 1000)
 })) 
 
 //network interface from appolo
@@ -41,6 +64,6 @@ const delay = setContext( req => new Promise((success, fail) => {
  ])
  const cache = new InMemoryCache()
 
- const client = new ApolloClient({link, cache})
+ const client = new ApolloClient({link, cache, resolvers, typeDefs})
 
  export default client
