@@ -3,5 +3,30 @@
     "id": "jBWMVGjm50l6LGwepDoty",
     "username": "frontendmaster"
   },
-  "pet": []
+  "pet": [
+    {
+      "id": "1234",
+      "createdAt": "65156",
+      "name": "tobi",
+      "type": "DOG"
+    },
+    {
+      "id": "51651",
+      "createdAt": "65156",
+      "name": "shilpi",
+      "type": "CAT"
+    },
+    {
+      "id": "515",
+      "createdAt": "65156",
+      "name": "charu",
+      "type": "CAT"
+    },
+    {
+      "id": "mVVwZxmcP20hg5WWL79WS",
+      "createdAt": 1611745215737,
+      "name": "vineet",
+      "type": "CAT"
+    }
+  ]
 }
